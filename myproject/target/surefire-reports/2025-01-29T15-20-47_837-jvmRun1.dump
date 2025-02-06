@@ -1,0 +1,58 @@
+# Created at 2025-01-29T15:20:56.973
+org.testng.TestNGException: 
+Cannot instantiate class com.myproject.myproject.AppTest
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:38)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:374)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:286)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:110)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:195)
+	at org.testng.internal.TestNGClassFinder.<init>(TestNGClassFinder.java:120)
+	at org.testng.TestRunner.initMethods(TestRunner.java:405)
+	at org.testng.TestRunner.init(TestRunner.java:231)
+	at org.testng.TestRunner.init(TestRunner.java:201)
+	at org.testng.TestRunner.<init>(TestRunner.java:150)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:529)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:158)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:112)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1246)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1233)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1085)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:29)
+	... 23 more
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 113
+Current browser version is 132.0.6834.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-6T66JUP', ip: '192.168.1.7'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at com.myproject.myproject.AppTest.<init>(AppTest.java:8)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 26 more
+
+
