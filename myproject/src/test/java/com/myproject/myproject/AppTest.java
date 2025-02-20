@@ -28,7 +28,8 @@ public class AppTest {
 		extent.attachReporter(htmlReporter);
 
 		// Create a new test and start logging
-		test = extent.createTest("SeleniumTest", "This is a test to demonstrate Extent Reports with Selenium");
+		
+		test = extent.createTest("Demo Project","This is a demo test to demonstrate Extent Reports with Selenium");
 
 		WebDriver driver = new ChromeDriver();
 		FileInputStream input = new FileInputStream("../myproject/config.properties");
@@ -43,7 +44,7 @@ public class AppTest {
 		// search for amazon india
 		AppDetails ap = PageFactory.initElements(driver, AppDetails.class);
 		ap.setSearchNameField("Amazon");
-
+		test.info("searched for Amazon text");
 		Thread.sleep(1000);
 		driver.close();
 		extent.flush();
