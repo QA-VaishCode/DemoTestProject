@@ -5,7 +5,7 @@
     <classes>
       <class name="com.myproject.myproject.AppTest">
         <methods>
-          <include name="shouldAnswerWithTrue"/>
+          <include name="demoTest"/>
         </methods>
       </class> <!-- com.myproject.myproject.AppTest -->
     </classes>
