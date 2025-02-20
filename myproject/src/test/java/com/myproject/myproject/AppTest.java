@@ -44,7 +44,7 @@ static ExtentTest test;
 	 
 	 
 	//search for amazon india
-	 //driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("Amazon");
+	 driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("Amazon");
 	 Thread.sleep(1000);
      System.out.println("test");
      driver.close();
