@@ -1,0 +1,17 @@
+{
+  "username_field": {
+    "id": "username",
+    "xpath": "//input[@name='username']",
+    "css_selector": "#username"
+  },
+  "password_field": {
+    "id": "password",
+    "xpath": "//input[@name='password']",
+    "css_selector": "#password"
+  },
+  "submit_button": {
+    "id": "submit",
+    "xpath": "//button[@type='submit']",
+    "css_selector": "#submit"
+  }
+}
