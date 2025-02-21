@@ -8,7 +8,15 @@ public class AppDetails {
 	  @FindBy(xpath = "//textarea[@class='gLFyf']")
       private WebElement searchBox;
 	
-	  public void setSearchNameField(String username) {
+	  public WebElement getSearchBox() {
+		return searchBox;
+	}
+
+	public void setSearchBox(WebElement searchBox) {
+		this.searchBox = searchBox;
+	}
+
+	public void setSearchNameField(String username) {
 		  searchBox.sendKeys(username);
 	  }
 }
