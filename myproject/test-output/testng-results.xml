@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T22:04:23 IST" name="Default suite" finished-at="2025-02-20T22:04:40 IST" duration-ms="17551">
+  <suite started-at="2025-03-07T09:48:21 IST" name="Default suite" finished-at="2025-03-07T09:48:26 IST" duration-ms="5040">
     <groups>
     </groups>
-    <test started-at="2025-02-20T22:04:23 IST" name="Default test" finished-at="2025-02-20T22:04:40 IST" duration-ms="17551">
-      <class name="com.myproject.myproject.AppTest">
-        <test-method signature="demoTest()[pri:0, instance:com.myproject.myproject.AppTest@7d8995e]" started-at="2025-02-20T22:04:23 IST" name="demoTest" finished-at="2025-02-20T22:04:40 IST" duration-ms="17483" status="PASS">
+    <test started-at="2025-03-07T09:48:21 IST" name="Default test" finished-at="2025-03-07T09:48:26 IST" duration-ms="5040">
+      <class name="com.myproject.myproject.ApiTest">
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.myproject.myproject.ApiTest@48f2bd5b]" started-at="2025-03-07T09:48:21 IST" name="testLoginSuccess" finished-at="2025-03-07T09:48:26 IST" duration-ms="4980" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demoTest -->
-      </class> <!-- com.myproject.myproject.AppTest -->
+        </test-method> <!-- testLoginSuccess -->
+      </class> <!-- com.myproject.myproject.ApiTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

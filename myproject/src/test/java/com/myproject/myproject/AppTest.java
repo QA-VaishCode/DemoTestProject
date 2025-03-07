@@ -4,9 +4,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -46,6 +48,16 @@ public class AppTest {
 		ap.setSearchNameField("Amazon");
 		test.info("searched for Amazon text");
 		Thread.sleep(1000);
+		
+		Actions act = new Actions(driver);
+		act.keyDown(Keys.CONTROL)
+		       .sendKeys("a")
+		       .keyUp(Keys.CONTROL)
+		       .sendKeys(Keys.CONTROL)
+		       .sendKeys("c")
+		       .keyUp(Keys.CONTROL)
+		       .perform();
+		
 		driver.close();
 		extent.flush();
 	}
